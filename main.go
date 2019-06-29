@@ -40,6 +40,9 @@ func main() {
 			case ms := <-ch:
 				var d msg.Msg
 				json.Unmarshal(ms.Body, &d)
+				if name == d.Name{
+					continue
+				}
 				fmt.Println(d.Time.Format("2006-01-02 15:04:05"))
 				fmt.Println(fmt.Sprintf("%s：%s", d.Name, d.Msg))
 			ms.Ack(false)
