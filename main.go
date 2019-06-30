@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/streadway/amqp"
-	"groupChat/msg"
+	"github.com/abusizhishen/groupChat/msg"
 	"os"
 	"time"
 )
